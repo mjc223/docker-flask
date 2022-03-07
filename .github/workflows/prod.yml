@@ -1,4 +1,4 @@
-name: Run Tests and Push Image to DockerHub
+name: Production Workflow
 
 on:
   push:
@@ -6,9 +6,6 @@ on:
       - 'master'
     tags:
       - 'v*'
-  pull_request:
-    branches:
-      - 'master'
 
 jobs:
   runtest:
