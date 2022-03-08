@@ -3,7 +3,7 @@ from os import getenv
 import datetime
 
 def utility_text_processors():
-    message = "hello world"
+    message = "made you look"
 
     def deployment_environment():
         return getenv('FLASK_ENV', None)
@@ -14,8 +14,9 @@ def utility_text_processors():
         year = date.strftime("%Y")
         return year
 
-    def format_price(amount, currency="$"):
-        return f"{currency}{amount:.2f}"
+
+    def format_price(amount, currency="€"):
+        return "{currency}{amount:.2f}"
 
     return dict(
         mymessage=message,
@@ -23,6 +24,3 @@ def utility_text_processors():
         year=current_year(),
         format_price=format_price
     )
-
-
-

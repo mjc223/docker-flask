@@ -1,4 +1,65 @@
 {% extends "base.html" %}
 {% block content %}
-    Page 1
+
+<div>
+    <ul class="nav flex-column">
+        <li class="nav-item">
+          <a class="nav-link" href="#repos">Repositories</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#commit">Commits</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#branch">Branches</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#tag">Tags</a>
+        </li>
+                <li class="nav-item">
+          <a class="nav-link" href="#merge">Merges</a>
+        </li>
+    </ul>
+    <br>
+</div>
+
+    <div>
+    <h2 id="repos">Repositories:</h2>
+    <p>
+        	Git repositories are a collection of files, of several different versions, of a project.
+	        They are typically synchronized with some online hosting service such as github to allow
+	        a safer backup or collaboration.
+    </p>
+    <br>
+
+    <h2 id="commit">Commits:</h2>
+    <p>
+        	Commits are snapshots of a repository at a specific point in time, typically associated
+	with a message and often synchronized with a remote hosting service at this point.
+    </p>
+    <br>
+
+    <h2 id="branch">Branches:</h2>
+    <p>
+        	Git branches are independent lines of development from each other, often a program is
+	branched from master into a separate branch that is developed in to add a new feature
+	while keeping a stable version of the project.
+    </p>
+    <br>
+
+    <h2 id="tag">Tags:</h2>
+    <p>
+	    Tags are used to capture a specific point in a program's history, they are distinct
+	from branches as they do not have further history of commits after creation. They are
+	generally used to point to version releases.
+    </p>
+    <br>
+
+    <h2 id="merge">Merges:</h2>
+    <p>
+	    Merging is an action a user can take to reconcile separate development histories that are
+	contained in branches. One branches changes are enveloped into another branch, for example
+	feat1 into master.
+    </p>
+    <br>
+</div>
 {% endblock %}

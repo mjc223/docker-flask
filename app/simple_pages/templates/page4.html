@@ -1,4 +1,92 @@
 {% extends "base.html" %}
 {% block content %}
-    Page 4
+
+<div>
+    <ul class="nav flex-column">
+        <li class="nav-item">
+          <a class="nav-link" href="#action">Github Actions</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#simplepage">Simple Page</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#link">Links</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#outline">Outline</a>
+        </li>
+    </ul>
+    <br>
+</div>
+
+<div>
+    <h2 id="action">Github Actions:</h2>
+    <p>
+
+    </p>
+    <br>
+
+    <h2 id="simplepage">Simple Pages:</h2>
+    <p>
+		I less used simple page tests as much as I battled with it. I didn't fully understand the issue
+		with the pytest at first, but once I recognized there was assertions preventing pages from being
+		renamed I altered tests to accept the more correct input
+    </p>
+    <br>
+
+    <h2 id="link">Requested Links:</h2>
+    <a href="https://github.com/mjc223/docker-flask">Github Repo</a>
+    <br>
+	<a href="https://flask.palletsprojects.com/en/2.0.x/">Flask</a>
+	<br>
+	<a href="https://flask.palletsprojects.com/en/2.0.x/blueprints/">Flask Blue Print Documentation</a>
+	<br>
+	<a href="https://flask.palletsprojects.com/en/2.0.x/testing/">Flask testing with Pytest</a>
+	<br>
+    <br>
+    <h2 id="outline">Outline:</h2>
+    <p>
+		root <= root of project <br>
+            .github <= folder containing git information <br>
+                dev.yml <= YML containing information relating to dev pushing actions <br>
+                prod.yml <= YML containing infor relating to prod pushing actions <br>
+		    app <= application information <br>
+                context_processors <= Contains context processor file <br>
+                    __init__.py <= Example of context processor, utilized in base.html <br>
+                simple_pages <= contains simple_page information <br>
+                    templates <= contains html pages accessed in the website <br>
+                    __init__.py <= Prepares simple_page templates for rendering <br>
+                static <= contains resources for a website <br>
+                    css <= path to store custom css code for the website <br>
+                    images <= store images and reference this for display <br>
+                    js <= path to store js for this website <br>
+                templates <= contains base.html <br>
+                    base.html <= Every simple_page inherits from this base, streamlines universal changes<br>
+                __init__.py <= Initializes flask and works with simple_pages <br>
+                run.py <= Opens the app itself <br>
+            calculator <= contains calculator files <br>
+                operations <= calculator code <br>
+                    __init__.py <= contains calculator classes <br>
+                __init__.py <= initializes calculator code <br>
+            tests <= contains files for testing <br>
+                __init__.py <= initializes tests for feedback <br>
+                calculator_test.py <= tests calc functions <br>
+                conftest.py <= tests client creation <br>
+                context_process_test.py <= tests integrity of footer <br>
+                operations_test.py <= test operation functions <br>
+                simple_pages_test <= tests integrity of simple_pages <br>
+            .coveragerc <= tells pytest what to ignore <br>
+            .dockerignore <= tells docker what to ignore, not build <br>
+            .gitignore <= tells git what not to upload <br>
+            .pylintrc <= Settings for python interpreter <br>
+            docker-compose.yml <= Tells docker how to configure this project for deployment <br>
+            Dockerfile <= Tells docker how to build this projects container <br>
+            heroku.yml <= Tells heroku how to deploy <br>
+            pytest.ini <= tells pytest where to look to test <br>
+            readme.md <= displayed on the github by default <br>
+            requirements.txt <= lists python packages to be installed <br>
+            setup.py <= setups packages <br>
+    </p>
+    <br>
+</div>
 {% endblock %}

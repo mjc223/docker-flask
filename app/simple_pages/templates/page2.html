@@ -1,4 +1,74 @@
 {% extends "base.html" %}
 {% block content %}
-    Page 2
+<div>
+
+<div>
+    <ul class="nav flex-column">
+        <li class="nav-item">
+          <a class="nav-link" href="#container">Containerization</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#image">Images</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#link">Link</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#commands">Commands</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#terminal">Terminal</a>
+        </li>
+    </ul>
+    <br>
+</div>
+
+
+    <h2 id="container">Containerization:</h2>
+    <p>
+		A container is essentially a package of software code with only the bare minimum OS libraries
+		required to make the program function. The container can run universally on all hosts, due to
+		the abstraction that removes the host operating system from the equation. Containerization in
+		comparison to virtualization runs with far less overhead and far greater simplicity. Docker and
+		the Docker Engine is a tool to enable containerization on hardware.
+    </p>
+    <br>
+
+    <h2 id="image">Images:</h2>
+    <p>
+		An image in the context of computing is essentially a saved state of something, whether it is
+		a disk image or a docker image. It is a read only file that contains all the relevant information
+		about a particular storage device or system state. In docker, an image is vital to containerization.
+		An image must be built and utilized in order to construct a container. Typically, a program will
+		start with a parent image of linux and with the settings provided in the docker file, create the
+		docker image, utilized by the docker container. This image will be able to
+    </p>
+    <br>
+
+    <h2 id="link">Link to Project Repository:</h2>
+    <a href="https://hub.docker.com/r/mjc223/docker-flask">LINK TO THE REPO</a>
+    <br>
+    <br>
+
+    <h2 id="commands">Commands:</h2>
+    <p>
+		A brief summary of vital docker commands.
+        <br>
+		<code>docker compose up</code>: Utilizes a user created YAML file to run an app in docker <br>
+		<code>docker create </code>: Creates new container <br>
+		<code>docker images </code>: Lists all local docker images in the repository <br>
+		<code>docker ps </code>: Lists all currently running docker containers, append --all for all created ones <br>
+		<code>docker stop </code> <code> docker restart </code>: Stop or restart a specific docker container <br>
+		<code>docker rm </code>: Remove a specific docker container <br>
+    </p>
+    <br>
+
+	<h2 id="terminal">Utilize terminal to access container:</h2>
+    <p>
+		First you must identify the container you want to access, run docker ps for this.
+		Afterwards, you must utilize docker exec -it <container> to run terminal commands,
+		and you can append
+    </p>
+    <br>
+</div>
 {% endblock %}
