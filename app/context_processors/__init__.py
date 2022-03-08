@@ -16,7 +16,7 @@ def utility_text_processors():
 
 
     def format_price(amount, currency="€"):
-        return "{currency}{amount:.2f}"
+        return f"{currency}{amount:.2f}"
 
     return dict(
         mymessage=message,
