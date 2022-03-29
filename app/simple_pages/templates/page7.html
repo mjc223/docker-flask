@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div>
+    <ul class="nav flex-column">
+        <li class="nav-item">
+          <a class="nav-link" href="#encap">Encapsulation: </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#inherit">Inheritance: </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#poly">Polymorphism: </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#abstract">Abstraction: </a>
+        </li>
+    </ul>
+    <br>
+</div>
+
+<div>
+    <h2 id="encap">Encapsulation: </h2>
+    <p>
+        The data processing is entirely done within the operations classes.
+    </p>
+    <br>
+
+    <h2 id="inherit">Inheritance: </h2>
+    <p>
+        The inheritance utilization in this project is not currently present, but an interface called operation that
+        all operation classes inherit from would be an example of this.
+    </p>
+    <br>
+
+    <h2 id="poly">Polymorphism: </h2>
+    <p>
+        Deploying master in this case automatically deploy it to production due to the prod.yml workflow and github actions
+        that are set. Alternatively, you could set each branch to be tracked by Heroku manually, and deploy development
+        and production branches like that.
+    </p>
+    <br>
+
+    <h2 id="abstract">Abstraction: </h2>
+    <p>
+	    Practiced where the Calculator class calls the operations, separating the data presentation
+	    and the data processing.
+    </p>
+    <br>
+</div>
+{% endblock %}

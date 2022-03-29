@@ -1,0 +1,151 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div>
+    <ul class="nav flex-column">
+        <li class="nav-item">
+          <a class="nav-link" href="#def">Definitions</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#solid">SOLID Overview</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#pattern">Design Pattern</a>
+        </li>
+    </ul>
+    <br>
+</div>
+
+<div>
+    <h1 id ="def">Definitions</h1>
+    <br>
+
+    <h2>Instantiation:</h2>
+    <p>
+        Creating an object of a given class.
+    </p>
+    <br>
+
+    <h2>Object:</h2>
+    <p>
+        A self-contained component that consists of both methods and properties to utilize data.
+    </p>
+    <br>
+
+    <h2>Class:</h2>
+    <p>
+        A blueprint for creating objects, providing initial values for their state, and implementations
+	of behavior.
+    </p>
+    <br>
+
+    <h2>Namespace:</h2>
+    <p>
+        A region that provides a scope to the identifiers inside of it, used to prevent name collisions.
+    </p>
+    <br>
+
+    <h2>Constructor: </h2>
+    <p>
+        A subroutine called to create an object, it prepares the object for use and often accepts arguments
+	used for setting member variables.
+    </p>
+    <br>
+
+    <h2>Fixture: </h2>
+    <p>
+        The understood and fixed environment in which tests are run to get consistent results, our docker
+	setup is part of our fixture.
+    </p>
+    <br>
+
+    <h2>Type Hint: </h2>
+    <p>
+        A way to statically indicate type of values in python, introduced in Python 3.5.
+    </p>
+    <br>
+
+    <h2>Type Cast: </h2>
+    <p>
+        Methods of changing an expression from one data type to another, such as int to float.
+    </p>
+    <br>
+
+    <h2>Unit Test: </h2>
+    <p>
+        A way of testing a unit, the smallest piece of code that can be reasonably isolated in a system.
+    </p>
+    <br>
+
+    <h2>Static: </h2>
+    <p>
+        Unchanging. Static members of a class are only created once, regardless of how many objects of the
+	class are created.
+    </p>
+    <br>
+
+    <h2>Instance Method: </h2>
+    <p>
+        A method that belongs to the instance of a class, rather than the class itself. Non-static.
+    </p>
+    <br>
+
+    <h2>Instance Property: </h2>
+    <p>
+        A property that belongs to the instance of the class, rather than the class itself.
+    </p>
+    <br>
+
+    <h2>Static Method: </h2>
+    <p>
+        Static methods belong to the class rather than the instance of the class.
+    </p>
+    <br>
+
+    <h2>Static Property: </h2>
+    <p>
+       A property that belongs to the class rather than the instance of the class.
+    </p>
+    <br>
+
+    <h2>Encapsulation: </h2>
+    <p>
+       Bundling of data with the methods that operate on it, a mechanism of restricting access.
+    </p>
+    <br>
+
+    <h2>Inheritance: </h2>
+    <p>
+       Where one class inherits the attributes and methods of another class, with a parent-child relationship.
+    </p>
+    <br>
+
+    <h2>Polymorphism: </h2>
+    <p>
+       Similar to inheritance, but where one interface is implemented by multiple different classes.
+    </p>
+    <br>
+
+    <h2>Abstraction: </h2>
+    <p>
+       Hiding all but the relevant data about an object to reduce complexity, increase efficiency,
+	decouple design from implementation.
+    </p>
+    <br>
+
+    <h1 id="solid">Overview of SOLID: </h1>
+    <p>
+       Hiding all but the relevant data about an object to reduce complexity, increase efficiency,
+	decouple design from implementation.
+    </p>
+    <br>
+
+    <h1 id="pattern">Design Patterns: </h1>
+    <p>
+	    A general, reusable solution to a commonly occuring problem within a context  in software design.
+	It cannot be transformed directly into source or machine code, as it is an abstraction of codes,
+	and demonstrates principles of solving this problem.
+    </p>
+    <br>
+</div>
+{% endblock %}
