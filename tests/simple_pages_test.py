@@ -10,7 +10,7 @@ def test_request_main_menu_links(client):
     assert b'<a class="nav-link" href="/page3">PyFlask</a>' in response.data
     assert b'<a class="nav-link" href="/page4">CI/CD</a>' in response.data
     assert b'<a class="nav-link" href="/page5">OOP</a>' in response.data
-    assert b'<a class="nav-link" href="/page6">PyTest/a>' in response.data
+    assert b'<a class="nav-link" href="/page6">PyTest</a>' in response.data
     assert b'<a class="nav-link" href="/page7">Calc Demo</a>' in response.data
     assert b'<a class="nav-link" href="/page8">SOLID</a>' in response.data
 
