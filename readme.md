@@ -12,7 +12,7 @@ setup.py is a config file for pytest
 
 [![Development Workflow](https://github.com/mjc223/docker-flask/actions/workflows/dev.yml/badge.svg)](https://github.com/mjc223/docker-flask/actions/workflows/dev.yml)
 
-* [Developmental Deployment](https://mjc223-flask.herokuapp.com/)
+* [Developmental Deployment](https://mjc223-flask-dev.herokuapp.com/)
 
 ## Setting up CI/CD
 
