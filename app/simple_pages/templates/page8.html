@@ -1,0 +1,68 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div>
+    <ul class="nav flex-column">
+        <li class="nav-item">
+          <a class="nav-link" href="#s">S </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#o">O </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#l">L </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#i">I </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#d">D </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#fact">Factory Pattern: </a>
+        </li>
+    </ul>
+    <br>
+</div>
+
+<div>
+    <h2 id="s">Single-Responsibility Principle: </h2>
+    <p>
+        Every operations class performs exactly one purpose, and calculator merely stores the results
+        of all the called operations.
+    </p>
+    <br>
+
+    <h2 id="o">Open-Closed Principle: </h2>
+    <p>
+        The Calculator class is freely open to add additional methods, it is modular.
+    </p>
+    <br>
+
+    <h2 id="l">Liskov Substitution Principle: </h2>
+    <p>
+        Subtypes should be substitutable for base types, currently there are no sub types that run
+	into a problem here.
+    </p>
+    <br>
+
+    <h2 id="i">Interface Segregation Principle: </h2>
+    <p>
+	    There are no methods of interfaces that are not used.
+    </p>
+    <br>
+
+    <h2 id="d">Dependency Inversion Principle: </h2>
+    <p>
+	    There are no entities that depend on concretions over abstraction.
+    </p>
+    <br>
+
+    <h2 id="fact">Factory Pattern: </h2>
+    <p>
+	    The objects are created without exposing the creation logic to the client. The client interacts with
+	the calculator class, but the processing logic is hidden within the operation classes.
+    </p>
+    <br>
+</div>
+{% endblock %}

@@ -1,0 +1,68 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div>
+    <ul class="nav flex-column">
+        <li class="nav-item">
+          <a class="nav-link" href="#install">Installation </a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#usage">Usage </a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#importance">Testing Importance</a>
+        </li>
+    </ul>
+    <br>
+</div>
+
+<div>
+    <h2 id="install">Installation: </h2>
+    <p>
+        Begin by running the following command in the python terminal:
+        <br>
+        <code> pip install pytest </code>
+    </p>
+    <br>
+
+    <h2 id="usage">Usage: </h2>
+    <p>
+        Consider the following function definition.
+        <br>
+        <code>
+            def capital_case(x): <br>
+            return x.capitalize()
+        </code>
+        <br>
+        <br>
+        The core of writing a tests is essentially checking if the output matches what is
+        expected. All tests must begin with test_ or end in _test in their file names.
+        <br>
+        <br>
+        An appropriate test is as follows.
+        <br>
+
+        <code>
+            def test_capital_case(): <br>
+            assert capital_case('semaphore') == 'Semaphore'
+        </code>
+
+        <br>
+        <br>
+        Run pytest by writing <code> pytest</code> into the python terminal
+    </p>
+    <br>
+
+    <h2 id="importance">Testing Importance: </h2>
+    <p>
+        Testing is necessary for any robust application, and unit testing helps in multiple ways.
+        One, unit testing targets specific parts of your application, allowing for more specific tests.
+        Two, unit testing is far faster than manual evaluation, allowing for a higher quantity of tests.
+        Three, unit testing is consistent. After writing the tests, there is no chance for human error evaluating
+        incorrectly.
+    </p>
+    <br>
+</div>
+{% endblock %}
