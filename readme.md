@@ -2,7 +2,7 @@
 
 [![Production Workflow](https://github.com/mjc223/docker-flask/actions/workflows/prod.yml/badge.svg)](https://github.com/mjc223/docker-flask/actions/workflows/prod.yml)
 
-* [Production Deployment](https://mjc223-flask-prod.herokuapp.com/)
+* [Production Deployment](https://mjc223-flask-dev.herokuapp.com/)
 
 <<<<<<< HEAD
 .pylintrc is the config for pylint
