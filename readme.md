@@ -27,7 +27,7 @@ app/dyno.
 4. Create an account with Heroku, create an app for production and an app for development
 5. Create a new repo in Docker hub
 
-#### Setup Docker and Heroku Credentials In the Repository Settings under Action -> Secret
+#### commit test Setup Docker and Heroku Credentials In the Repository Settings under Action -> Secret
 
 6. In your newly created Github repository, add new repository secrets for DOCKER_USERNAME, DOCKER_PASSWORD, HEROKU_API_KEY (Values are DOCKER_USERNAME: your docker hub username; DOCKER_PASSWORD: your docker hub password; HEROKU_API_KEY: API key from the heroku app)
 ### GitHub Notes:  Set the action secrets repository in: -> settings -> actions -> secrets
